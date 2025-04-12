@@ -1,0 +1,9 @@
+﻿  UnitTest3.cpp
+C:\Users\olegs\Desktop\University\github\Lab_11\UnitTest3\UnitTest3.cpp(1,9): warning C4603: '_CRT_SECURE_NO_WARNINGS': macro is not defined or definition is different after precompiled header use
+  (compiling source file '/UnitTest3.cpp')
+      C:\Users\olegs\Desktop\University\github\Lab_11\UnitTest3\UnitTest3.cpp(1,9):
+      Add macro to precompiled header instead of defining here
+      C:\Users\olegs\Desktop\University\github\Lab_11\UnitTest3\UnitTest3.cpp(2,1):
+      use of precompiled header
+  
+  UnitTest3.vcxproj -> C:\Users\olegs\Desktop\University\github\Lab_11\x64\Debug\UnitTest3.dll

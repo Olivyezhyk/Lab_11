@@ -1,0 +1,15 @@
+﻿  UnitTest7.cpp
+C:\Users\olegs\Desktop\University\github\Lab_11\UnitTest7\UnitTest7.cpp(48,58): warning C4838: conversion from 'double' to 'char' requires a narrowing conversion
+  (compiling source file '/UnitTest7.cpp')
+  
+C:\Users\olegs\Desktop\University\github\Lab_11\UnitTest7\UnitTest7.cpp(48,58): warning C4244: 'initializing': conversion from 'double' to 'char', possible loss of data
+  (compiling source file '/UnitTest7.cpp')
+  
+C:\Users\olegs\Desktop\University\github\Lab_11\UnitTest7\UnitTest7.cpp(72,58): warning C4838: conversion from 'double' to 'char' requires a narrowing conversion
+  (compiling source file '/UnitTest7.cpp')
+  
+C:\Users\olegs\Desktop\University\github\Lab_11\UnitTest7\UnitTest7.cpp(72,58): warning C4244: 'initializing': conversion from 'double' to 'char', possible loss of data
+  (compiling source file '/UnitTest7.cpp')
+  
+     Creating library C:\Users\olegs\Desktop\University\github\Lab_11\x64\Debug\UnitTest7.lib and object C:\Users\olegs\Desktop\University\github\Lab_11\x64\Debug\UnitTest7.exp
+  UnitTest7.vcxproj -> C:\Users\olegs\Desktop\University\github\Lab_11\x64\Debug\UnitTest7.dll

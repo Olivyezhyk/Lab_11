@@ -83,7 +83,7 @@ void AddStudentToFile(const string& filename) {
     cout << "Surname: ";
     string temp_surname;
     getline(cin, temp_surname);
-    strncpy(student.surname, temp_surname.c_str(), sizeof(student.surname) - 1);
+    strncpy_s(student.surname, sizeof(student.surname), temp_surname.c_str(), _TRUNCATE);
     student.surname[sizeof(student.surname) - 1] = '\0';
 
     cout << "Course: ";

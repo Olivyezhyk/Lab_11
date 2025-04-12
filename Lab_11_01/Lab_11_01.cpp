@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <fstream>
-#include <limits>
 using namespace std;
 
 void CreateBIN(const char* fname) {
