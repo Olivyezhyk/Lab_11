@@ -1,0 +1,11 @@
+﻿  test.cpp
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(182,39): error C7555: use of designated initializers requires at least '/std:c++20'
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(183,37): error C7555: use of designated initializers requires at least '/std:c++20'
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(184,38): error C7555: use of designated initializers requires at least '/std:c++20'
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(185,38): error C7555: use of designated initializers requires at least '/std:c++20'
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(186,39): error C7555: use of designated initializers requires at least '/std:c++20'
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(189,28): error C3316: 'Car []': an array of unknown size cannot be used in a range-based for statement
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(189,22): error C2530: 'car': references must be initialized
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(189,22): error C3531: 'car': a symbol whose type contains 'auto' must have an initializer
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(189,26): error C2143: syntax error: missing ';' before ':'
+C:\Users\olegs\Desktop\University\github\Lab_11\test\test.cpp(189,32): error C2143: syntax error: missing ';' before ')'
