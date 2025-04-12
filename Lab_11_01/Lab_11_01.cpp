@@ -14,7 +14,7 @@ void CreateBIN(const char* fname) {
         cout << "Enter an integer: ";
         while (!(cin >> num)) {
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cin.ignore(10000, '\n');
             cout << "Invalid input! Enter an integer: ";
         }
         fout.write(reinterpret_cast<char*>(&num), sizeof(num));
@@ -56,8 +56,6 @@ bool FindMaxOddMinEven(const char* fname, int& maxOdd, int& minEven) {
         return false;
     }
 
-    maxOdd = numeric_limits<int>::min();
-    minEven = numeric_limits<int>::max();
     bool foundOdd = false, foundEven = false;
     int num;
 
@@ -75,6 +73,14 @@ bool FindMaxOddMinEven(const char* fname, int& maxOdd, int& minEven) {
             }
         }
     }
+
+    if (!foundOdd) {
+        cout << "No odd numbers found." << endl;
+    }
+    if (!foundEven) {
+        cout << "No even numbers found." << endl;
+    }
+
     fin.close();
     return foundOdd || foundEven;
 }
@@ -101,7 +107,9 @@ int main() {
     PrintBIN(fname);
 
     int maxOdd, minEven;
-    if (FindMaxOddMinEven(fname, maxOdd, minEven)) {
+    bool found = FindMaxOddMinEven(fname, maxOdd, minEven);
+
+    if (found) {
         cout << "Enter output file name: ";
         cin >> gname;
         WriteResultToFile(gname, maxOdd, minEven);
