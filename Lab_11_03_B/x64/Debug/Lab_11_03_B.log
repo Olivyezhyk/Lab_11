@@ -1,2 +1,3 @@
 ﻿  Lab_11_03_B.cpp
+C:\Users\olegs\Desktop\University\github\Lab_11\Lab_11_03_B\Lab_11_03_B.cpp(288,17): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   Lab_11_03_B.vcxproj -> C:\Users\olegs\Desktop\University\github\Lab_11\x64\Debug\Lab_11_03_B.exe

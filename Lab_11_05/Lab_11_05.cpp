@@ -16,6 +16,14 @@ struct Car {
     } details;
 };
 
+bool isValidCarType(char type) {
+    return type == 'L' || type == 'V';
+}
+
+bool isValidServiceLife(int serviceLife) {
+    return serviceLife > 0 && serviceLife <= 50;
+}
+
 void addCar(const string& filename) {
     ofstream file(filename, ios::binary | ios::app);
     if (!file) {
@@ -26,12 +34,19 @@ void addCar(const string& filename) {
     Car car;
     cout << "Brand: ";
     cin >> car.brand;
-    cout << "Type (L - sedan, V - truck): ";
-    cin >> car.type;
+
+    do {
+        cout << "Type (L - sedan, V - truck): ";
+        cin >> car.type;
+    } while (!isValidCarType(car.type));
+
     cout << "License Plate: ";
     cin >> car.licensePlate;
-    cout << "Service Life (years): ";
-    cin >> car.serviceLife;
+
+    do {
+        cout << "Service Life (years): ";
+        cin >> car.serviceLife;
+    } while (!isValidServiceLife(car.serviceLife));
 
     if (car.type == 'L') {
         cout << "Color: ";
@@ -40,10 +55,6 @@ void addCar(const string& filename) {
     else if (car.type == 'V') {
         cout << "Load Capacity (tons): ";
         cin >> car.details.loadCapacity;
-    }
-    else {
-        cerr << "Unknown car type!" << endl;
-        return;
     }
 
     file.write(reinterpret_cast<char*>(&car), sizeof(Car));
@@ -63,6 +74,7 @@ void displayCars(const string& filename) {
             << ", License Plate: " << car.licensePlate
             << ", Service Life: " << car.serviceLife
             << " years, Type: " << (car.type == 'L' ? "Sedan" : "Truck");
+
         if (car.type == 'L') {
             cout << ", Color: " << car.details.color;
         }
@@ -187,7 +199,7 @@ int main() {
         default:
             cout << "Invalid choice!" << endl;
         }
-    } while (choice != 7);
+    } while (choice != 6);
 
     return 0;
 }
